@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ML Prediction System</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#4facfe,#00f2fe);
+}
+
+.container{
+background:white;
+padding:30px;
+width:400px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.container h2{
+text-align:center;
+margin-bottom:20px;
+color:#333;
+}
+
+.input-group{
+margin-bottom:15px;
+}
+
+.input-group label{
+font-size:14px;
+font-weight:bold;
+display:block;
+margin-bottom:5px;
+}
+
+.input-group input,
+.input-group select{
+width:100%;
+padding:10px;
+border:1px solid #ccc;
+border-radius:6px;
+font-size:14px;
+}
+
+button{
+width:100%;
+padding:12px;
+border:none;
+border-radius:8px;
+background:#4facfe;
+color:white;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#2a7be4;
+}
+
+.result{
+margin-top:20px;
+text-align:center;
+font-size:18px;
+font-weight:bold;
+color:#333;
+}
+
+.footer{
+margin-top:15px;
+font-size:12px;
+text-align:center;
+color:gray;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h2>Loan Prediction System</h2>
+
+<form>
+
+<div class="input-group">
+<label>Applicant Income</label>
+<input type="number" placeholder="Enter income">
+</div>
+
+<div class="input-group">
+<label>Loan Amount</label>
+<input type="number" placeholder="Enter loan amount">
+</div>
+
+<div class="input-group">
+<label>Credit History</label>
+<select>
+<option>Select</option>
+<option>Good</option>
+<option>Bad</option>
+</select>
+</div>
+
+<div class="input-group">
+<label>Employment Status</label>
+<select>
+<option>Select</option>
+<option>Employed</option>
+<option>Self Employed</option>
+<option>Unemployed</option>
+</select>
+</div>
+
+<button type="submit">Predict</button>
+
+</form>
+
+<div class="result">
+Prediction Result: --
+</div>
+
+<div class="footer">
+Machine Learning Prediction System
+</div>
+
+</div>
+
+</body>
+</html>
